@@ -1,0 +1,36 @@
+# -*- coding: undecided -*-
+server {
+  rails_env production;
+  # rails_env development;
+  listen 80;
+
+
+  #Server
+  server_name fast-auto-repair.com www.fast-auto-repair.com;
+
+  root /home/ubuntu/wwww/fastauto_racing/current/public;
+  passenger_ruby /home/ubuntu/.rvm/wrappers/ruby-2.2.3@fastauto_racing/ruby;
+
+  passenger_enabled on;
+  passenger_min_instances 10;
+  server_name fast-auto-repair.com;
+  access_log logs/fast-auto-repair.access;
+  error_log logs/fast-auto-repair.error error;
+}
+
+
+
+IMAGE SIZES:
+  ABOUT US:
+    Photo: 300x300
+  FEATURES:
+    Photo Small: 135 × 121
+  NEWS ARTICLES
+    Photo: 270 × 224
+  PHOTOS
+    Photo Small: 170 × 147
+  STORIES
+    Photo: 1170 × 494
+    Photo Small: 170 × 147
+  RESIDENTS
+    Photo: 270 × 224:

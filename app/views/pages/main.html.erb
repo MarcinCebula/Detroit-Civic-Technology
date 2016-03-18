@@ -1,0 +1,122 @@
+<!-- Preloader -->
+<div class="preloader-mask">
+	<div class="preloader"><div class="spin base_clr_brd"><div class="clip left"><div class="circle"></div></div><div class="gap"><div class="circle"></div></div><div class="clip right"><div class="circle"></div></div></div></div>
+</div>
+
+	<!-- Header -->
+	<header>
+		<nav class="navigation navigation-header">
+			<div class="container">
+				<div class="navigation-brand">
+					<div class="brand-logo">
+						<a href="index.html" class="logo"></a><a href="index.html" class="logo logo-alt"></a>
+					</div>
+				</div>
+				<button class="navigation-toggle">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<div class="navigation-navbar collapsed">
+					<ul class="navigation-bar navigation-bar-left">
+						<li><a href="#hero">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#features">Features</a></li>
+						<li><a href="#product">Prices</a></li>
+						<li><a href="#feedback">Feedback</a></li>
+						<li><a href="#team">Team</a></li>
+						<li><a href="#guarantee">Contacts</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" href="#">Extra</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="#">Homepages</a>
+									<ul class="dropdown-menu">
+										<li><a href="index.html">Default</a></li>
+										<li><a href="index-clickthrough.html">Clickthrough</a></li>
+										<li><a href="index-color.html">Colored</a></li>
+										<li><a href="index-fast-register.html">Fast Registration</a></li>
+										<li><a href="index-promo.html">Promo</a></li>
+										<li><a href="index-waiting-list.html">Waiting List</a></li>
+										<li><a href="index-video.html">Video Background</a></li>
+										<li><a href="index-video-youtube.html">YouTube Embed</a></li>
+										<li><a href="index-video-vimeo.html">Vimeo Embed</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="#">Blog</a>
+									<ul class="dropdown-menu">
+										<li><a href="blog.html">List</a></li>
+										<li><a href="blog-post.html">Post</a></li>
+									</ul>
+								</li>
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="#">Ecommerce</a>
+									<ul class="dropdown-menu">
+										<li><a href="product-grid.html">Product Grid</a></li>
+										<li><a href="product-list.html">Product List</a></li>
+										<li><a href="product.html">Product Page</a></li>
+										<li><a href="cart-checkout.html">Cart checkout</a></li>
+										<li><a href="payment-confirm.html">Payment Confirmation</a></li>
+									</ul>
+								</li>
+								<li><a href="register.html">Registration</a></li>
+								<li><a href="forms.html">Forms</a></li>
+								<li><a href="shortcodes.html">Shortcodes</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="navigation-bar navigation-bar-right">
+						<li><a href="register.html">Login</a></li>
+						<li class="featured"><a class="btn btn-sm btn-outline-color" href="register.html">Sign up</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+<!-- Mobile replace example -->
+<!-- <%#= render partial: "t01_landing_page", locals: { css: "hidden-xs" } %> -->
+
+<%= render partial: "t01_landing_page", locals: { css: "" } %>
+<%= render partial: "t02_logos", locals: { css: "" } %>
+
+<%= render partial: "t04_summary_of_product", locals: { css: "hidden-xs" } %>
+<%= render partial: "t04m_summary_of_product", locals: { css: "visible-xs" } %>
+<hr class="no-margin" />
+<%= render partial: "t03_tabs", locals: { css: "hidden-xs" } %>
+<%= render partial: "t03m_tabs", locals: { css: "visible-xs" } %>
+<hr>
+
+
+<%= render partial: "x_slider_test", locals: { css: "visible-xs" } %>
+<%= render partial: "t05_screenshots", locals: { css: "hidden-xs" } %>
+
+<%= render partial: "t06_features", locals: { css: "" } %>
+
+
+
+
+<%= render partial: "t08_price_packanges", locals: { css: "hidden-xs" } %>
+<%= render partial: "x_price_packanges", locals: { css: "visible-xs" } %>
+
+
+<%#= render partial: "t09_awards", locals: { css: "" } %>
+<%#= render partial: "t10_feedback", locals: { css: "" } %>
+<%#= render partial: "t11_team", locals: { css: "" } %>
+<%#= render partial: "t12_behind_the_scene", locals: { css: "" } %>
+<%= render partial: "t13_signup", locals: { css: "" } %>
+
+<%= render partial: "t07_newsletter", locals: { css: "" } %>
+<%#= render partial: "t14_footer", locals: { css: "" } %>
+
+
+
+
+
+
+<div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
+
+<% content_for :javascript do %>
+  <%= javascript_include_tag 'startuply.js' %>
+<% end %>

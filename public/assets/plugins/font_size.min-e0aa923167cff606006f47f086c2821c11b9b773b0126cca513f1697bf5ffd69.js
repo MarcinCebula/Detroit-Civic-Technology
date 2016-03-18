@@ -1,0 +1,6 @@
+/*!
+ * froala_editor v1.2.8 (https://www.froala.com/wysiwyg-editor)
+ * License https://www.froala.com/wysiwyg-editor/terms
+ * Copyright 2014-2015 Froala Labs
+ */
+!function(t){t.Editable.prototype.refreshFontSize=function(){var e=t(this.getSelectionElement()),n=parseInt(e.css("font-size").replace(/px/g,""),10)||16;this.$editor.find('.fr-dropdown > button[data-name="fontSize"] + ul li').removeClass("active"),this.$editor.find('.fr-dropdown > button[data-name="fontSize"] + ul li[data-val="'+n+'px"]').addClass("active")},t.Editable.commands=t.extend(t.Editable.commands,{fontSize:{title:"Font Size",icon:"fa fa-text-height",refreshOnShow:t.Editable.prototype.refreshFontSize,seed:[{min:11,max:52}],undo:!0,callback:function(t,e){this.inlineStyle("font-size",t,e)},callbackWithoutSelection:function(t,e){this._startInFontExec("font-size",t,e)}}}),t.Editable.prototype.command_dispatcher=t.extend(t.Editable.prototype.command_dispatcher,{fontSize:function(t){var e=this.buildDropdownFontsize(t),n=this.buildDropdownButton(t,e);return n}}),t.Editable.prototype.buildDropdownFontsize=function(t){for(var e='<ul class="fr-dropdown-menu f-font-sizes">',n=0;n<t.seed.length;n++)for(var o=t.seed[n],i=o.min;i<=o.max;i++)e+='<li data-cmd="'+t.cmd+'" data-val="'+i+'px"><a href="#"><span>'+i+"px</span></a></li>";return e+="</ul>"}}(jQuery);

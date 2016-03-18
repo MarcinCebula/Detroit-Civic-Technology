@@ -1,0 +1,6 @@
+{:uriI"ãfile:///Users/marcincebula/.rvm/gems/ruby-2.2.2@pawslove_landing_page/gems/rails_admin-0.6.8/app/assets/stylesheets/rails_admin/base/README.txt?type=text/plain&id=afedc3176f576e38ee91cdba05f3ee7582e1ecc4713e5c7e70f21155cb41bc62:ET:load_pathI"q/Users/marcincebula/.rvm/gems/ruby-2.2.2@pawslove_landing_page/gems/rails_admin-0.6.8/app/assets/stylesheets;T:filenameI"ˆ/Users/marcincebula/.rvm/gems/ruby-2.2.2@pawslove_landing_page/gems/rails_admin-0.6.8/app/assets/stylesheets/rails_admin/base/README.txt;T:	nameI"rails_admin/base/README;T:logical_pathI" rails_admin/base/README.txt;T:content_typeI"text/plain;T:sourceI"…For RailsAdmin developers:
+We should use sass variables & mixins as much as possible so that themers/users can override them cleanly
+;T:metadata{	:dependencieso:Set:
+@hash{	I"environment-version;TTI"environment-paths;TTI"4processors:type=text/plain&file_type=text/plain;TTI"–file-digest:///Users/marcincebula/.rvm/gems/ruby-2.2.2@pawslove_landing_page/gems/rails_admin-0.6.8/app/assets/stylesheets/rails_admin/base/README.txt;TT:charsetI"
+utf-8;F:digest"%H^]åS“¶ú•=İ6L/€ÍêL¤{«šbÓ}Zd’:lengthi…:dependencies_digest"%ò/·uÆjá,X!¼Åîn™$¼ôñ–çñµ­÷^˜:idI"Eafedc3176f576e38ee91cdba05f3ee7582e1ecc4713e5c7e70f21155cb41bc62;F:
+mtimel+Ïì·V

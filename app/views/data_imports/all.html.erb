@@ -1,0 +1,9 @@
+<section class=''>
+  <%= form_tag("/data_imports/x", method: "post", multipart: true) do %>
+    <%= label_tag(:q, ":x Organization Import") %>
+    <%= text_field_tag(:q) %>
+    <%= file_field 'datafile', :q %>
+    <%= submit_tag("Upload") %>
+  <% end %>
+
+</section>
